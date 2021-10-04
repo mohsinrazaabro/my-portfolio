@@ -59,15 +59,20 @@ nav {
   top: 0px;
   width: 100vw;
 }
-
+.blur {
+  backdrop-filter: blur(1px);
+}
 .navbar {
   transition: var(--trans-delay);
-  background-color: var(--main-bg-color);
+  max-width: 1200px;
+  margin: 0% auto;
+  /* background-color: var(--main-bg-color); */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 3rem;
+  backdrop-filter: blur(10px);
 }
 .burger {
   position: absolute;
@@ -145,11 +150,11 @@ nav {
   transition: var(--trans-delay);
   border: none;
   color: var(--main-color);
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
 }
 .navbar li a {
   transition: var(--trans-delay);
   text-decoration: none;
   color: var(--main-color);
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
 }

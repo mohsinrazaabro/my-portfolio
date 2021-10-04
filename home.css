@@ -35,5 +35,6 @@
   color: var(--main-color);
 }
 .btn-2 {
+  color: black;
   background-color: #8ff8ff;
 }
