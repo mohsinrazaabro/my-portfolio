@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body class="container">
+    <header>
+      <nav class="navbar container">
+        <div class="logo-name">Mohsin Abro</div>
+        <div id="toggle-btn" class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a id="night-mode">Night Mode</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="home" id="home">
+        <div class="hero">
+          <h1 class="home-title">Hello, I'm Mohsin Abro</h1>
+          <h3 class="home-subtitle">Full Stack Web Developer</h3>
+          <p>
+            I build feature-rich and fast web & mobile apps using web
+            technologies such as vue.js, quasar.js and node.js
+          </p>
+          <div class="home-links">
+            <a class="btn-1" href="#about">About Me</a>
+            <a class="btn-2" href="#projects">See Projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="projects" id="projects">
+        <div class="hero">
+          <h1 class="hero-title">Projects</h1>
+          <div class="project-list">
+            <div class="card">
+              <div class="card-img"></div>
+              <div class="card-title">Chat App</div>
+              <div class="card-stacks">
+                <p>Quasar.js, Express.js, Node.js</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img"></div>
+              <div class="card-title">E-Commerce</div>
+              <div class="card-stacks">
+                <p>Quasar.js, Express.js, Node.js</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img"></div>
+              <div class="card-title">SUCL</div>
+              <div class="card-stacks">
+                <p>Quasar.js, Express.js, Node.js</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <div class="hero">
+          <h1 class="hero-title">About me</h1>
+          <div class="about-section">
+            <div class="about-me">
+              <h3>About me</h3>
+              Sometimes i code for fun, sometimes I code to create dream
+              projects
+            </div>
+
+            <div class="skills">
+              <h3>Skills</h3>
+              Languages: Python, Javascript, HTML, CSS, Sass
+              frameworks/libraries: Vue.js, Quasar.js, Express.js, Node.js,
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

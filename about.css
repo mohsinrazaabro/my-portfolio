@@ -1,0 +1,21 @@
+.about .hero-title {
+  font-weight: 500;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-me {
+  margin: auto 5rem;
+}
+.skills {
+  margin: auto 5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-bg-color: white;
+  --main-color: black;
+  --trans-delay: 0.3s;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.175rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(209, 209, 209);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(144, 144, 144);
+}
+body {
+  margin: 0;
+  padding: 0%;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1200px;
+  margin: 0% auto;
+  background-color: var(--main-bg-color);
+}
+
+section {
+  margin-top: 4rem;
+}
+
+header {
+  position: fixed;
+  margin: 0% auto;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+}
+
+.navbar {
+  transition: var(--trans-delay);
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+}
+.burger {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.burger div {
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+
+.navbar .logo-name {
+  margin: 1rem;
+  color: var(--main-color);
+}
+.navbar ul {
+  margin: 0%;
+  padding: 0;
+  display: flex;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar li a {
+  padding: 1rem;
+  display: block;
+}
+.navbar li a:hover {
+  background-color: var(--main-color);
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar ul li a {
+    padding: 1rem;
+  }
+  .navbar ul li {
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .burger {
+    display: flex;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.navbar li button {
+  transition: var(--trans-delay);
+  border: none;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+}
+.navbar li a {
+  transition: var(--trans-delay);
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+}
