@@ -3,11 +3,12 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  transition: var(--trans-delay);
 }
 
 :root {
-  --main-bg-color: white;
-  --main-color: black;
+  --main-bg-color: rgb(241, 241, 241);
+  --main-color: rgb(37, 37, 37);
   --trans-delay: 0.3s;
 }
 
